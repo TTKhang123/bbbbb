@@ -1,0 +1,27 @@
+Để chạy được, install các thư viện sau ( install trong terminal của vscode ): 
+NOTE: đã cài xong npm ( check trong terminal bằng câu lệnh npm -v, có thì sẽ hiện ra phiên bản của npm, ví dụ 10.5.2 )
+1. ant design: npm install antd
+2. redux toolkit: npm install @reduxjs/toolkit
+3. react-router-dom: npm i react-router-dom
+4. react-slick: npm install react-slick 
+5. react-script: npm i react-scripts
+6. styled-component: npm i styled-components
+Sau khi cài xong đủ thư viện, chạy npm start để xem giao diện web
+
+
+Danh sách các file:
+1. routes/index.js: Nơi đoạn mã để phục vụ việc chuyển hướng các trang trong web
+2. App.js: Chứa đoạn mã mục đích chuyển hướng các trang, với trang mặc định sẽ là DefaultComponent (Có Header và Body), nếu trường hợp chuyển hướng đến trang bị lỗi sẽ không còn là DefaultComponent, mà sẽ xuất hiện NotFoundPage
+3. ProductsPage/ ProductsPage.js: Đây là trang chứa sản phẩm
+4. HomePage/HomePage.js: Đây là trang chủ của web
+5. OrderPage/OrderPage.js: Đây là trang để khách hàng Order 
+6. HomePage/style.js: chứa các thẻ để css cho trang chủ là HomePage
+7. ButtonSearch/ButtonSearch.js: Đây là file chứa đoạn mã cho ô tìm kiếm ở phần Header
+8. ProductBlock/ProductBlock.jsx: Chứa các thẻ sản phẩm 
+9. Navigation/ Navigation.jsx: chứa thanh sidebar bên trái khi nhấn vào mục Type Header trong web (Áo, Quần, Phụ Kiện, Đồ bơi)
+
+* Trong folder components
+1. ButtonComponent: chứa component của nút input Search (trên thanh tìm kiếm), mục đích tạo component này để phục vụ cho việc sử dụng lại về sau này
+2. InputComponent: chứa ô để gõ thông tin cần Search trên Header, tạo ra component riêng của ô input này cũng để phục vụ cho việc sử dụng lại về sau
+3. HeaderComponent: ở file này, chia bố cục Header ra thành 3 phần ( trái , giữa , phải ) với tỉ lệ là 6 - 12 - 6, trong đó bên trái là thông tin trang web ( logo, tên shop ), ở giữa là thanh tìm kiếm, bên trái là các thông tin liên quan đến user và giỏ hàng
+4. Type_of_products: chứa đoạn mã để làm phần navigation ở dưới header

@@ -1,0 +1,68 @@
+import { Radio } from "antd";
+import styled  from "styled-components";
+
+export const WrapperStyleHeader = styled.div`
+  background: rgb(255, 255, 255);
+  padding: 9px 16px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  span {
+    color: rgb(36, 36, 36);
+    font-weight: 400;
+    font-size: 13px;
+  }
+`
+
+export const WrapperTotal = styled.div`
+display: flex;
+align-items: flex-start; 
+justify-content: space-between;
+  padding: 17px 20px;
+  background: #fff ;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+`
+
+export const WrapperBank = styled.div`
+  border: 1px solid;
+  border-radius: 8px;
+  align-item: center;
+  text-align: center;
+  background: green;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 30px 270px;
+`
+
+
+
+export const WrapperItemOrder = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 9px 16px;
+  background: #fff;
+  margin-top: 12px;
+`
+
+
+export const WrapperRight = styled.div`
+  width: 320px;
+  margin-left: 20px;
+  display: flex ;
+  flex-direction: column; 
+  gap: 10px; 
+  align-items: center
+`
+
+export const WrapperInfo = styled.div`
+  padding: 17px 20px;
+  border-bottom: 1px solid #f5f5f5;
+  background: #fff;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  width: 100%
+`
+
+
